@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export default class CustomerList extends Component {
-  render() {
+class CustomerList extends Component {
+  render() {    
+    const { title, first_name, last_name, annual_income, employment_status } = this.props.customer;
     return (
       <table>
         <thead>
@@ -13,9 +14,19 @@ export default class CustomerList extends Component {
           </tr>
         </thead>
         <tbody>
-  
+          <tr>
+            <td>{title} {first_name} {last_name}</td>
+            <td>{annual_income}</td>
+            <td>{employment_status}</td>
+          </tr>
         </tbody>
       </table>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { customer: state.customer };
+}
+
+export default connect(mapStateToProps)(CustomerList);
