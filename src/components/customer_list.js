@@ -3,14 +3,15 @@ import { connect } from 'react-redux';
 
 class CustomerList extends Component {
   render() {    
-    const { title, first_name, last_name, annual_income, employment_status } = this.props.customer;
+    const { title, first_name, last_name, annual_income, employment_status, available_cards } = this.props.customer;
     return (
-      <table>
+      <table style={{border: '1px solid black', textAlign: 'center'}}>
         <thead>
           <tr>
             <th>Customer Name</th>
             <th>Annual Income</th>
             <th>Employment Status</th>
+            <th>Credit Cards</th>
           </tr>
         </thead>
         <tbody>
@@ -18,6 +19,7 @@ class CustomerList extends Component {
             <td>{title} {first_name} {last_name}</td>
             <td>{annual_income}</td>
             <td>{employment_status}</td>
+            <td>{available_cards}</td>
           </tr>
         </tbody>
       </table>
