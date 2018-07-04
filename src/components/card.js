@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { getCard } from '../actions/index';
 
-const Card = (props) => {
-  return <div>CARD: {props.card_name}</div> 
+class Card extends Component {
+  render() {   
+    return (
+      <div>
+        {this.props.card_name}
+      </div>
+    );
+  }
 }
 
-export default Card;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ getCard }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(Card);
+
+
