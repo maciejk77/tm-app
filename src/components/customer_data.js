@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import CardData from './card_data';
+import CardList from './card_list';
 
 class CustomerData extends Component {
 
   render() {    
     const { title, first_name, last_name, annual_income, employment_status, available_cards } = this.props.customer;
+    if(!available_cards) { return [] };
+
     return (
       <div>
         <table style={{border: '1px solid black', textAlign: 'center'}}>
@@ -26,7 +28,7 @@ class CustomerData extends Component {
             </tr>
           </tbody>
         </table>
-        <CardData available_cards={["Anywhere Card", "Liquid Card", "Student Life Card"]} />
+        <CardList available_cards={available_cards} />
       </div>
     );
   }
