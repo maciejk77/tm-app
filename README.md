@@ -5,7 +5,8 @@
 - used **create-react-app** to scaffold application
 - used **axios** to fetch data from endpoint
 - Redux for getting customer data, dispatch action creator **GET_CUSTOMER** and flow through **reducer_customer.js** reducer
-- direct use of **axios** and mounting it with lifecycle method componentDidMount()
+- added **redux-promise** middleware
+- direct use of **axios** and mounting it with lifecycle method **componentDidMount()**
 
 ##Instruction
 - git clone the project repo
@@ -15,8 +16,8 @@
 
 ##To do
 - add counter TOTAL CREDIT
-- toggle ADD / REMOVE button and associated action to update TOTAL CREDIT allowance
-- add styling, use CSS in JS?, Sass?
+- toggle ADD / REMOVE button (or clickable component?) and associated action to update TOTAL CREDIT allowance
+- add styling, use CSS in JS?, reactstrap?, Sass?
 - add responsivness
 - add some tests, app was not TDD
 - add webpack/gulp to run server & FE application with one command
