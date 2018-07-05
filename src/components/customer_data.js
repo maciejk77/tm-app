@@ -16,7 +16,6 @@ class CustomerData extends Component {
               <th>Customer Name</th>
               <th>Annual Income</th>
               <th>Employment Status</th>
-              <th>Credit Cards</th>
             </tr>
           </thead>
           <tbody>
@@ -24,7 +23,6 @@ class CustomerData extends Component {
               <td>{title} {first_name} {last_name}</td>
               <td>{annual_income}</td>
               <td>{employment_status}</td>
-              <td>{available_cards}</td>
             </tr>
           </tbody>
         </table>
