@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Card from './card.js';
 
-const CardList = (props) => {
-  return props.available_cards.map(card => 
-    <div key={card}>
-      <Card card_name={card}/>
-    </div>
-  )
+class CardList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { allowance: 0 }
+    this.add_credit = this.add_credit.bind(this)
+  }
+
+  add_credit(amount) {
+    this.setState({ allowance: this.state.allowance + amount })
+  }
+
+  render() {
+    return this.props.available_cards.map(card => 
+      <div key={card}>
+      <div>COUNTER =======> {this.state.allowance}</div>
+        <Card 
+          card_name={card}
+          allowance={this.state.allowance}
+          add_credit={this.add_credit}
+        />
+
+      </div>
+    )
+  }
 }
 
 export default CardList;

@@ -17,14 +17,15 @@ class Card extends Component {
   render() {  
     const { name, status, apr, balance_mths, purchase_mths, credit_avail } = this.state.card_info;
     return (
-      <div style={{border: '1px solid red', textAlign: 'center', width: '400px', margin: '5px 0 5px 0', padding: '5px 0'}}>
+      <div 
+        style={{border: '1px solid red', textAlign: 'center', width: '400px', margin: '5px 0 5px 0', padding: '5px 0'}}>
         <div>{name}</div>
         <div>{status}</div>
         <div>{apr}</div>
         <div>{balance_mths}</div>
         <div>{purchase_mths}</div>
         <div>{credit_avail}</div>
-        <button>ADD</button>
+        <button onClick={() => this.props.add_credit(credit_avail)}>ADD</button>
       </div>
     );
   }
