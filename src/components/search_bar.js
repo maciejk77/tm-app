@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getCustomer } from '../actions/index';
+import cn from 'classnames';
+import s from './search_bar.css'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -33,7 +35,7 @@ class SearchBar extends Component {
           onChange={this.handle_change}
         />
         <span>
-          <button type="submit">CHECK</button>
+          <button type="submit" className={cn('button')}>CHECK</button>
         </span>
       </form>
     );
