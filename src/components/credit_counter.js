@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-class CreditCounter extends Component {
-  render() {
-    return(
-      <div>
-        TOTAL CREDIT ALLOWANCE: £{this.props.allowance} 
-      </div>
-    );
-  }
+const CreditCounter = (props) => {  
+  return(
+    <div>
+      TOTAL CREDIT ALLOWANCE: £{props.allowance} 
+    </div>
+  );
 }
 
 export default CreditCounter;
