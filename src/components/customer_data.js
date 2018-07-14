@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CardList from './card_list';
+import s from './css/customer_data.css'
 
 class CustomerData extends Component {
 
@@ -10,21 +11,19 @@ class CustomerData extends Component {
 
     return (
       <div>
-        <table style={{border: '1px solid black', textAlign: 'center'}}>
-          <thead>
-            <tr>
-              <th>Customer Name</th>
-              <th>Annual Income</th>
-              <th>Employment Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{title} {first_name} {last_name}</td>
-              <td>{annual_income}</td>
-              <td>{employment_status}</td>
-            </tr>
-          </tbody>
+        <table className={'customer_data'}>
+          <tr>
+            <th className={'customer_data__label'}>Customer Name</th>
+            <td>{title} {first_name} {last_name}</td>
+          </tr>
+          <tr>
+            <th className={'customer_data__label'}>Annual Income</th>
+            <td>{annual_income}</td>
+          </tr>
+          <tr>  
+            <th className={'customer_data__label'}>Employment Status</th>
+            <td>{employment_status}</td>
+          </tr>
         </table>
         <CardList 
           available_cards={available_cards} 

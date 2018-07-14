@@ -1,0 +1,17 @@
+.customer_data {
+  font-size: 1rem;
+  font-family: "Verdana";
+  background-color: lightgray;
+  color: black;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  margin-bottom: .6rem;
+
+  &__label {
+    width: 11rem;
+    text-align: right;
+    padding-right: 2rem;
+  }
+}
+
+

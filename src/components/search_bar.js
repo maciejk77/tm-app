@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getCustomer } from '../actions/index';
-import cn from 'classnames';
+//import cn from 'classnames';
 import s from './css/search_bar.css'
 
 class SearchBar extends Component {

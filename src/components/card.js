@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import cn from 'classnames';
+import s from './css/card.css'
 
 class Card extends Component {
   state = {
@@ -28,19 +30,44 @@ class Card extends Component {
   render() {  
     const { name, status, apr, balance_mths, purchase_mths, credit_avail } = this.state.card_info;
     return (
-      <div 
-        style={{border: '1px solid red', textAlign: 'center', width: '400px', margin: '5px 0 5px 0', padding: '5px 0'}}>
-        <div>{name}</div>
-        <div>{status}</div>
-        <div>{apr}</div>
-        <div>{balance_mths}</div>
-        <div>{purchase_mths}</div>
-        <div>{credit_avail}</div>
-        { this.state.to_add 
-          ? <button onClick={() => this.handle_add(credit_avail)}>ADD</button> 
-          : <button onClick={() => this.handle_remove(credit_avail)}>REMOVE</button> 
-        }
-      </div>
+      <div>
+        <table className={'card'}>
+          <tr>
+            <th>Card Name</th>
+            <td className={'card__data'}>{name}</td>
+          </tr>
+          <tr>
+            <th>Entitled Customers</th>
+            <td className={'card__data'}>{status}</td>
+          </tr>
+
+          <tr>
+            <th>APR</th>
+            <td className={'card__data'}>{apr}</td>
+          </tr>
+          <tr>
+            <th>Balance [Months]</th>
+            <td className={'card__data'}>{balance_mths}</td>
+          </tr>
+
+          <tr>
+            <th>Purchase [Months]</th>
+            <td className={'card__data'}>{purchase_mths}</td>
+          </tr>
+          <tr>
+            <th>Available Credit</th>
+            <td className={'card__data'}>{credit_avail}</td>
+          </tr>
+          <tbody>
+          <div>
+            { this.state.to_add 
+              ? <button className={cn('card__button', 'button_add')} onClick={() => this.handle_add(credit_avail)}>ADD</button> 
+              : <button className={cn('card__button', 'button_remove')} onClick={() => this.handle_remove(credit_avail)}>REMOVE</button> 
+            }
+          </div>
+          </tbody>
+        </table>
+      </div>  
     );
   }
 }

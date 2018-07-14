@@ -1,0 +1,13 @@
+.counter {
+  border: 0.1rem solid #ff6a20;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  margin: .6rem 0;
+  background-color: #ff6a20;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Verdana";
+  padding: 0 1.5rem;
+  width: fit-content; }
