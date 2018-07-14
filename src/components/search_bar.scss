@@ -1,0 +1,11 @@
+.search_bar {
+  border: 1px solid red;
+  color: red;
+  &__box {
+    background-color: gray;
+  };
+
+  &__button { 
+    border: 1px solid blue;
+  };
+}

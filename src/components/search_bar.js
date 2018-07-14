@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getCustomer } from '../actions/index';
 import cn from 'classnames';
-import s from './search_bar.css'
+import s from './css/search_bar.css'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -28,14 +28,23 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handle_submit}>
+      <form 
+        onSubmit={this.handle_submit}
+        className={'search_bar'}
+      >
         <input
+          className={'search_bar__box'}
           placeholder="Last Name here..."
           value={this.state.name}
           onChange={this.handle_change}
         />
         <span>
-          <button type="submit" className={cn('button')}>CHECK</button>
+          <button 
+            type="submit" 
+            className={'search_bar__button'}
+          >
+            CHECK
+          </button>
         </span>
       </form>
     );
