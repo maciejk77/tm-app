@@ -26,7 +26,11 @@ class CustomerData extends Component {
             </tr>
           </tbody>
         </table>
-        <CardList available_cards={available_cards} />
+        <CardList 
+          available_cards={available_cards} 
+          allowance={this.props.allowance}
+          add_credit={this.props.add_credit}
+          />
       </div>
     );
   }
