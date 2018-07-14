@@ -28,11 +28,12 @@ class SearchBar extends Component {
     return (
       <form onSubmit={this.handle_submit}>
         <input
+          placeholder="Last Name here..."
           value={this.state.name}
           onChange={this.handle_change}
         />
         <span>
-          <button type="submit">SEARCH</button>
+          <button type="submit">CHECK</button>
         </span>
       </form>
     );

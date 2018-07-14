@@ -6,11 +6,11 @@ export const GET_CUSTOMER = 'GET_CUSTOMER';
 
 export function getCustomer(customerLastName) {
   const url = `${ROOT_URL}/customers/${customerLastName}`;
-  const request = axios.get(url);
+  const response = axios.get(url);
 
   return {
     type: GET_CUSTOMER,
-    payload: request
+    payload: response
   }
 }
 

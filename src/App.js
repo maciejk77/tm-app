@@ -28,7 +28,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <SearchBar />
+        <SearchBar 
+          allowance={this.state.allowance}
+        />
         <CreditCounter 
           allowance={this.state.allowance}
         />

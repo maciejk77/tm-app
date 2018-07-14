@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const CreditCounter = (props) => {  
-  return(
+  return (
     <div>
-      TOTAL CREDIT ALLOWANCE: £{props.allowance} 
+    { props.allowance
+        ? <div> Total Selected Credit Allowance: £{props.allowance} </div>
+        : <div> &nbsp; </div>
+    }
     </div>
   );
 }

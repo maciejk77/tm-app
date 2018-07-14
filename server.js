@@ -28,7 +28,7 @@ app.get('/customers/:customerLastName', function(req, res) {
   data.customers.map(function(key, value) {
     if(data.customers[value].last_name.toLowerCase() === req.params.customerLastName.toLowerCase()) {
       res.send(data.customers[value]);
-    }
+    }  
   });
 });
 
