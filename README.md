@@ -6,6 +6,7 @@
 - run ```node server.js``` to kickstart server
 - ```yarn start``` to kickstart FE application
 - ```localhost:8080``` to see application
+- type in last names into search box under logo e.g. Rieck, Edmundson, Murphree (data.json mock of real JSON data available on endpoint served via Express.js)
 
 ## Steps completed
 - created a number of endpoints to serve **data.json** from data folder on **Express.js**
