@@ -34,6 +34,4 @@
 - Mock endpoints
 
 ## Screenshot
-
-- add image from /public/screenshot-tm.png
 ![Screenshot](public/screenshot-tm.png)
