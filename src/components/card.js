@@ -43,20 +43,20 @@ class Card extends Component {
 
           <tr>
             <th>APR</th>
-            <td className={'card__data'}>{apr}</td>
+            <td className={'card__data'}>{apr}%</td>
           </tr>
           <tr>
-            <th>Balance [Months]</th>
-            <td className={'card__data'}>{balance_mths}</td>
+            <th>Balance</th>
+            <td className={'card__data'}>{balance_mths} months</td>
           </tr>
 
           <tr>
-            <th>Purchase [Months]</th>
-            <td className={'card__data'}>{purchase_mths}</td>
+            <th>Purchase</th>
+            <td className={'card__data'}>{purchase_mths} months</td>
           </tr>
           <tr>
             <th>Available Credit</th>
-            <td className={'card__data'}>{credit_avail}</td>
+            <td className={'card__data'}>£{credit_avail}</td>
           </tr>
           <tbody>
           <div>

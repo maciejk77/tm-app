@@ -18,7 +18,7 @@ class CustomerData extends Component {
           </tr>
           <tr>
             <th className={'customer_data__label'}>Annual Income</th>
-            <td>{annual_income}</td>
+            <td>£{annual_income}</td>
           </tr>
           <tr>  
             <th className={'customer_data__label'}>Employment Status</th>
