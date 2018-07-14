@@ -3,7 +3,8 @@ import axios from 'axios';
 
 class Card extends Component {
   state = {
-    card_info: {}
+    card_info: {},
+    is_active: true
   }
 
   componentDidMount() {
@@ -12,6 +13,16 @@ class Card extends Component {
         const card_info = res.data;
         this.setState({card_info});
       })
+  }
+
+  handle_add(credit) {
+    this.props.add_credit(credit)
+    this.setState({is_active: !this.state.is_active})
+  }
+
+  handle_remove(credit) {
+    this.props.remove_credit(credit)
+    this.setState({is_active: !this.state.is_active})
   }
 
   render() {  
@@ -25,7 +36,12 @@ class Card extends Component {
         <div>{balance_mths}</div>
         <div>{purchase_mths}</div>
         <div>{credit_avail}</div>
-        <button onClick={() => this.props.add_credit(credit_avail)}>ADD</button>
+        { this.state.is_active &&
+          <button onClick={() => this.handle_add(credit_avail)}>ADD</button>
+        }
+        { !this.state.is_active &&
+          <button onClick={() => this.handle_remove(credit_avail)}>REMOVE</button>
+        }
       </div>
     );
   }

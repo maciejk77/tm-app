@@ -20,6 +20,7 @@ class CardList extends Component {
           card_name={card}
           allowance={this.props.allowance}
           add_credit={this.props.add_credit}
+          remove_credit={this.props.remove_credit}
         />
 
       </div>

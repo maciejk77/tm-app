@@ -30,6 +30,7 @@ class CustomerData extends Component {
           available_cards={available_cards} 
           allowance={this.props.allowance}
           add_credit={this.props.add_credit}
+          remove_credit={this.props.remove_credit}
           />
       </div>
     );

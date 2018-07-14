@@ -9,10 +9,15 @@ class App extends Component {
 
     this.state = { allowance: 0 }
     this.add_credit = this.add_credit.bind(this)
+    this.remove_credit = this.remove_credit.bind(this)
   }
 
   add_credit(amount) {
     this.setState({ allowance: this.state.allowance + amount })
+  }
+
+  remove_credit(amount) {
+    this.setState({ allowance: this.state.allowance - amount })
   }
 
   render() {
@@ -25,6 +30,7 @@ class App extends Component {
         <CustomerData 
           allowance={this.state.allowance}
           add_credit={this.add_credit}
+          remove_credit={this.remove_credit}
         />
       </div>
     );
