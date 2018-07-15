@@ -1,13 +1,14 @@
 .counter {
-  border: 0.1rem solid #ff6a20;
-  height: 3rem;
+  margin: .6rem auto;
+  border: 0.1rem solid #FF662E;
+  min-height: 3rem;
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  margin: .6rem 0;
-  background-color: #ff6a20;
-  color: white;
+  background-color: #FF662E;
+  color: #FFF;
   font-size: 1.2rem;
   font-family: "Verdana";
   padding: 0 1.5rem;
-  width: fit-content; }
+  width: fit-content;
+  max-width: 27rem; }

@@ -32,39 +32,40 @@ class Card extends Component {
     return (
       <div>
         <table className={'card'}>
-          <tr>
-            <th>Card Name</th>
-            <td className={'card__data'}>{name}</td>
-          </tr>
-          <tr>
-            <th>Entitled Customers</th>
-            <td className={'card__data'}>{status}</td>
-          </tr>
 
-          <tr>
-            <th>APR</th>
-            <td className={'card__data'}>{apr}%</td>
-          </tr>
-          <tr>
-            <th>Balance</th>
-            <td className={'card__data'}>{balance_mths} months</td>
-          </tr>
-
-          <tr>
-            <th>Purchase</th>
-            <td className={'card__data'}>{purchase_mths} months</td>
-          </tr>
-          <tr>
-            <th>Available Credit</th>
-            <td className={'card__data'}>£{credit_avail}</td>
-          </tr>
           <tbody>
-          <div>
-            { this.state.to_add 
-              ? <button className={cn('card__button', 'button_add')} onClick={() => this.handle_add(credit_avail)}>ADD</button> 
-              : <button className={cn('card__button', 'button_remove')} onClick={() => this.handle_remove(credit_avail)}>REMOVE</button> 
-            }
-          </div>
+            <tr>
+              <th>Card Name</th>
+              <td className={'card__data'}>{name}</td>
+            </tr>
+            <tr>
+              <th>Entitled Customers</th>
+              <td className={'card__data'}>{status}</td>
+            </tr>
+            <tr>
+              <th>APR</th>
+              <td className={'card__data'}>{apr}%</td>
+            </tr>
+            <tr>
+              <th>Balance</th>
+              <td className={'card__data'}>{balance_mths} months</td>
+            </tr>            
+            <tr>
+              <th>Purchase</th>
+              <td className={'card__data'}>{purchase_mths} months</td>
+            </tr>
+            <tr>
+              <th>Available Credit</th>
+              <td className={'card__data'}>£{credit_avail}</td>
+            </tr>
+            <tr>
+              <td>
+              { this.state.to_add 
+                ? <button className={cn('card__button', 'button_add')} onClick={() => this.handle_add(credit_avail)}>ADD</button> 
+                : <button className={cn('card__button', 'button_remove')} onClick={() => this.handle_remove(credit_avail)}>REMOVE</button> 
+              }
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>  

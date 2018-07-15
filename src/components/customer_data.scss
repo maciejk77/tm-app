@@ -1,11 +1,16 @@
+@import './variables.scss';
+
 .customer_data {
+  margin: 0 auto;
   font-size: 1rem;
-  font-family: "Verdana";
-  background-color: lightgray;
+  font-family: $tm-font-basic;
+  background-color: $tm-background-darker;
   color: black;
   padding: 1rem;
   border-radius: 1.25rem;
   margin-bottom: .6rem;
+  max-width: 27rem;
+  min-width: 15rem;
 
   &__label {
     width: 11rem;

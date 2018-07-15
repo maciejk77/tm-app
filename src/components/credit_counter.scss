@@ -1,16 +1,19 @@
+@import './variables.scss';
+
 .counter {
-  border: .1rem solid rgb(255, 106, 32);
-  height: 3rem;
+  margin: .6rem auto;
+  border: .1rem solid $tm-theme-colour;
+  min-height: 3rem;
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  margin: .6rem 0;
-  background-color: rgb(255, 106, 32);
-  color: white;
+  background-color: $tm-theme-colour;
+  color: $tm-background;
   font-size: 1.2rem;
-  font-family: "Verdana";
+  font-family: $tm-font-basic;
   padding: 0 1.5rem;
   width: fit-content;
+  max-width: 27rem;
 }
 
 

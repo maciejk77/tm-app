@@ -23,7 +23,6 @@
 - add responsivness
 - add some tests, app was not TDD
 - FIX: gulpfile to run ```gulp default``` a seqence of watcher, sass, browserSync? 
-- FIX: console.log error on card.js where <tr> cannot be immediate child of <table>
 - BUG: clearing results when name doesn't match ones in data.json
 - BUG: selecting card with Rieck and changing to Edmundson keeps 'Anywhere Card' selected (shared by both customers), app should reset state after each Last Name submission
 - refactoring needed to REDUX state management, passing state two level deep is prone to errors, may be acceptable for immediate parent/child components

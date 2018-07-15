@@ -12,18 +12,22 @@ class CustomerData extends Component {
     return (
       <div>
         <table className={'customer_data'}>
-          <tr>
-            <th className={'customer_data__label'}>Customer Name</th>
-            <td>{title} {first_name} {last_name}</td>
-          </tr>
-          <tr>
-            <th className={'customer_data__label'}>Annual Income</th>
-            <td>£{annual_income}</td>
-          </tr>
-          <tr>  
-            <th className={'customer_data__label'}>Employment Status</th>
-            <td>{employment_status}</td>
-          </tr>
+          
+          <thead>
+            <tr>
+              <th className={'customer_data__label'}>Customer Name</th>
+              <td>{title} {first_name} {last_name}</td>
+            </tr>
+            <tr>
+              <th className={'customer_data__label'}>Annual Income</th>
+              <td>£{annual_income}</td>
+            </tr>
+            <tr>
+              <th className={'customer_data__label'}>Employment Status</th>
+              <td>{employment_status}</td>
+            </tr>
+          </thead>
+          
         </table>
         <CardList 
           available_cards={available_cards} 

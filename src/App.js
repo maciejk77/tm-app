@@ -26,7 +26,7 @@ class App extends Component {
 
   // rendering components and passing initial counter value and +/- methods
   render() {
-    return (
+    return (      
       <div>
         <SearchBar 
           allowance={this.state.allowance}
