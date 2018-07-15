@@ -5,7 +5,6 @@
 - ```yarn install``` to install all dependencies
 - run ```node server.js``` to kickstart server
 - ```yarn start``` to kickstart FE application
-- ```localhost:8080``` to see application
 - type in last names into search box under logo e.g. **Rieck**, **Edmundson**, **Murphree** (data.json)
 
 ## Steps completed
@@ -19,7 +18,7 @@
 - used **SASS** compiled to **CSS** via ```gulp sass```
 
 ## To do
-- to include ```node server.js``` and ```localhost:8080``` to run with single command ```yarn start```
+- to include ```node server.js``` to run with single command ```yarn start```
 - add responsivness
 - add some tests, app was not TDD
 - FIX: gulpfile to run ```gulp default``` a seqence of watcher, sass, browserSync? 
