@@ -5,8 +5,8 @@ import s from './css/credit_counter.css'
 const CreditCounter = (props) => {  
   return (
     <div>
-    { props.allowance
-        ? <div className={'counter'}> Total Selected Credit Allowance: £{props.allowance} </div>
+    { props.total_credit
+        ? <div className={'counter'}> Total Selected Credit Allowance: £{props.total_credit} </div>
         : null
     }
     </div>

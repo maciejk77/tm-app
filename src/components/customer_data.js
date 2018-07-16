@@ -6,7 +6,10 @@ import s from './css/customer_data.css'
 class CustomerData extends Component {
 
   render() {    
-    const { title, first_name, last_name, annual_income, employment_status, available_cards } = this.props.customer;
+    const { title, first_name, 
+            last_name, annual_income, 
+            employment_status, available_cards } = this.props.customer;
+        
     if(!available_cards) { return [] };
 
     return (
@@ -31,10 +34,7 @@ class CustomerData extends Component {
         </table>
         <CardList 
           available_cards={available_cards} 
-          allowance={this.props.allowance}
-          add_credit={this.props.add_credit}
-          remove_credit={this.props.remove_credit}
-          />
+        />
       </div>
     );
   }
