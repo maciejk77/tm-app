@@ -1,5 +1,9 @@
 # TM React app
 
+## Project information
+
+This app consumes a mock data put on Express.js server. The data inlude cutomer personal information and their finacial data e.g. which credit cards they are entitled to. It is assumed that FE app will receive JSON object with all that data to render it to the screen. After submission one of the Last Names in the search box the app will render customer information and list of allowed credit cards per customer. Clicking on ADD/REMOVE buttons on each individual listed card will update total credit allowance component and provide the sum of the selection.
+
 ## Instruction
 - git clone the project repo
 - ```yarn install``` to install all dependencies
