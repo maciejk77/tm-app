@@ -2,18 +2,16 @@
 
 .customer_data {
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: $tm-font-basic;
   background-color: $tm-background-darker;
-  color: black;
+  color: $tm-text;
   padding: 1rem;
   border-radius: 1.25rem;
-  margin-bottom: .6rem;
-  max-width: 27rem;
-  min-width: 15rem;
+  margin-bottom: 1rem;
+  width: 68%;
 
   &__label {
-    width: 11rem;
     text-align: right;
     padding-right: 2rem;
   }

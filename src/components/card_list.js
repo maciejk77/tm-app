@@ -29,7 +29,7 @@ class CardList extends Component {
     if(!available_cards) { return null };
     
     return available_cards.map(card => 
-      <div key={card} classNames={'card_group'}>
+      <div key={card}>
         <Card 
           card_name={card}
           total_credit={this.state.total_credit}
@@ -46,7 +46,7 @@ class CardList extends Component {
         <CreditCounter 
           total_credit={this.state.total_credit} 
         />
-        {this.render_cards()}
+        <div className={'card_group'}>{this.render_cards()}</div>
       </div>
     )
   }

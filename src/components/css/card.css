@@ -1,5 +1,5 @@
 .card {
-  margin: 0 auto;
+  margin: .25rem;
   font-size: 1rem;
   font-family: "Verdana";
   background-color: #FFF;
@@ -7,7 +7,6 @@
   border: 0.3rem solid #FF662E;
   border-radius: 1.25rem;
   text-align: right;
-  margin-bottom: .6rem;
   padding-top: 1rem;
   max-width: 27rem;
   min-width: 15rem; }
@@ -17,16 +16,14 @@
     padding-left: 2rem; }
   .card__button {
     border: 0.3rem solid #FF662E;
-    border-radius: 0 1.25rem 0 1.25rem;
-    width: 12rem;
+    border-radius: 1.25rem 1.25rem 0 0;
     height: 2rem;
-    background-color: #FF662E;
     font-size: .9rem;
     color: #FFF;
-    margin-bottom: -.45rem;
-    margin-left: -.43rem;
-    margin-top: 1.2rem;
-    outline: none; }
+    margin-left: 4rem;
+    margin-top: 1.6rem;
+    outline: none;
+    width: 8rem; }
 
 .button_add {
   background-color: #FF662E; }

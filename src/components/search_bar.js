@@ -34,7 +34,6 @@ class SearchBar extends Component {
       >
         <input
           className={'search_bar__box'}
-          placeholder="Last Name here..."
           value={this.state.name}
           onChange={this.handle_change}
         />

@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .card {
-  margin: 0 auto;
+  margin: .25rem;
   font-size: 1rem;
   font-family: $tm-font-basic;
   background-color: $tm-background;
@@ -9,7 +9,6 @@
   border: .3rem solid $tm-theme-colour;
   border-radius: 1.25rem;
   text-align: right;
-  margin-bottom: .6rem;
   padding-top: 1rem;
   max-width: 27rem;
   min-width: 15rem;
@@ -22,16 +21,14 @@
 
   &__button {
     border: .3rem solid $tm-theme-colour;
-    border-radius: 0 1.25rem 0 1.25rem;
-    width: 12rem;
+    border-radius: 1.25rem 1.25rem 0 0;
     height: 2rem;
-    background-color: $tm-theme-colour;
     font-size: .9rem;
     color: $tm-background;
-    margin-bottom: -.45rem;
-    margin-left: -.43rem;
-    margin-top: 1.2rem;
+    margin-left: 4rem;
+    margin-top: 1.6rem;
     outline: none;
+    width: 8rem;
   }
 }
 
