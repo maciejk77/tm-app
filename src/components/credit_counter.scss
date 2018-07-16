@@ -5,14 +5,15 @@
   min-height: 4rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 1rem;
   background-color: $tm-theme-colour;
   color: $tm-background;
   font-size: 1.6rem;
   font-family: $tm-font-basic;
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
   width: 65%;
-  justify-content: center;
+  text-align: center;
 }
 
 
